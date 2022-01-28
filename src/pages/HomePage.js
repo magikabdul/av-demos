@@ -1,14 +1,15 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material';
 import MainNavbar from 'components/molecules/MainNavbar/MainNavbar';
-import FeatureCard from 'components/molecules/FeatureCard';
+import FeatureCard from 'components/molecules/FeatureCard/FeatureCard';
 import imgVideoWall from 'assets/card-videowall.jpg';
+import Footer from 'components/molecules/Footer/Footer';
 
 const cards = [
   {
     title: 'Video Wall',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis aliquam nunc. Donec venenatis risus eget lobortis pulvinar. Etiam pulvinar.',
+      'A video wall is a special multi-monitor setup that consists of multiple monitors sets tiled together contiguously or overlapped in order to form one large screen.',
     link: '/video-wall',
   },
 ];
@@ -29,6 +30,7 @@ const HomePage = () => (
         ))}
       </Grid>
     </Container>
+    <Footer />
   </>
 );
 
